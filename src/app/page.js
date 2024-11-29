@@ -10,11 +10,11 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen w-screen bg-gradient-to-b from-[#3B2F2F] via-[#4A3F35] to-[#5A4B41] text-gray-100 overflow-hidden">
-      <h1 className="text-5xl font-bold mb-6 text-gray-100">
+    <div className="flex flex-col items-center justify-center h-screen w-screen bg-gradient-to-b from-[#3B2F2F] via-[#4A3F35] to-[#5A4B41] text-gray-100 overflow-hidden px-4">
+      <h1 className="text-5xl font-bold mb-6 text-gray-100 text-center">
         A Journey Through Afghanistan
       </h1>
-      <p className="text-lg mb-8 text-gray-300">
+      <p className="text-lg mb-8 text-gray-300 text-center">
         Discover glimpses of memory and the essence of home.
       </p>
       <button
@@ -23,9 +23,9 @@ export default function Home() {
       >
         Begin
       </button>
-      <footer className="fixed bottom-0 left-0 w-full text-center py-4 bg-transparent text-gray-300">
+      <div className="fixed bottom-4 right-4 bg-gray-800 text-gray-100 py-1 px-3 rounded-lg shadow-lg">
         Emran Majidy
-      </footer>
+      </div>
     </div>
   );
 }
