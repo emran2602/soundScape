@@ -42,8 +42,8 @@ export default function Soundscape() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen w-screen bg-gradient-to-b from-[#3B2F2F] via-[#4A3F35] to-[#5A4B41] text-gray-100 overflow-hidden p-0 m-0 pb-16">
-      <h1 className="text-3xl font-semibold mb-6 border-b-2 border-gray-500 pb-2 text-gray-300">
+    <div className="flex flex-col items-center justify-start min-h-screen w-screen bg-gradient-to-b from-[#3B2F2F] via-[#4A3F35] to-[#5A4B41] text-gray-100 overflow-y-auto p-0 m-0 pb-20">
+      <h1 className="text-3xl font-semibold mt-8 mb-6 border-b-2 border-gray-500 pb-2 text-gray-300">
         {videos[currentIndex].title}
       </h1>
       <video
@@ -53,16 +53,18 @@ export default function Soundscape() {
         loop
         playsInline
         disablePictureInPicture
-        className="max-h-[80vh] w-auto rounded-lg shadow-lg border-4 border-gray-600"
+        className="max-h-[50vh] w-auto rounded-lg shadow-lg border-4 border-gray-600"
         onClick={togglePlayPause}
       />
-      <button
-        onClick={nextSoundscape}
-        className="mt-8 px-6 py-3 bg-[#7A1F33] text-gray-100 rounded-lg hover:bg-[#9A2D45] transition duration-300 shadow-lg border border-gray-600"
-      >
-        Next Soundscape
-      </button>
-      <div className="fixed bottom-2 right-4 bg-gray-800 text-gray-100 py-1 px-3 rounded-lg shadow-lg">
+      <div className="absolute bottom-20 left-0 w-full flex justify-center">
+        <button
+          onClick={nextSoundscape}
+          className="px-6 py-3 bg-[#7A1F33] text-gray-100 rounded-lg hover:bg-[#9A2D45] transition duration-300 shadow-lg border border-gray-600"
+        >
+          Next Soundscape
+        </button>
+      </div>
+      <div className="fixed bottom-4 right-4 bg-gray-800 text-gray-100 py-1 px-3 rounded-lg shadow-lg">
         Emran Majidy
       </div>
     </div>
