@@ -42,7 +42,7 @@ export default function Soundscape() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen w-screen bg-gradient-to-b from-[#3B2F2F] via-[#4A3F35] to-[#5A4B41] text-gray-100 overflow-hidden">
+    <div className="flex flex-col items-center justify-center min-h-screen w-screen bg-gradient-to-b from-[#3B2F2F] via-[#4A3F35] to-[#5A4B41] text-gray-100 overflow-hidden p-0 m-0 pb-16">
       <h1 className="text-3xl font-semibold mb-6 border-b-2 border-gray-500 pb-2 text-gray-300">
         {videos[currentIndex].title}
       </h1>
@@ -62,9 +62,9 @@ export default function Soundscape() {
       >
         Next Soundscape
       </button>
-      <footer className="fixed bottom-0 left-0 w-full text-center py-4 bg-transparent text-gray-300">
+      <div className="fixed bottom-2 right-4 bg-gray-800 text-gray-100 py-1 px-3 rounded-lg shadow-lg">
         Emran Majidy
-      </footer>
+      </div>
     </div>
   );
 }
